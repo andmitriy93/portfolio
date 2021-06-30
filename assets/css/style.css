@@ -94,6 +94,7 @@ html,body{
   opacity: 0;
 }
 
+
 .fix{position: relative;clear: both;}
 /*=============Style css=========*/
 
@@ -190,7 +191,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/about/kyle-cottrell-h45mrM-u4KM-unsplash.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -267,10 +268,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     font-size: 16px;
     text-transform: capitalize;
 }
+
 .single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px;}
 /*.single-about-txt*/
 
 /*.single-about-img */
+.single-about-img ul li>a:hover{
+    color: #b636ff;
+}/*hm-foot-icon*/
 .single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
 .single-about-img:before {
     position:  absolute;
@@ -284,6 +289,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .single-about-img img {
     max-width: 500px;
     height: 468px;
+    object-fit: cover;
 }
 .about-list-icon{
     display: flex;
@@ -336,6 +342,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     padding: 80px 0;
 }
 
+
 /*.education-horizontal-timeline*/
 .education-horizontal-timeline .col-sm-4 {padding:0 2px;}
 
@@ -373,7 +380,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     
 }
 .skill-content{padding: 50px 0 80px;}
-.single-skill-content{padding-top: 100px;}
+.single-skill-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    padding: 50px 0px 50px 30px;
+}
 .section-heading h2 {
     font-size: 24px;
     font-weight: 600;
@@ -395,6 +407,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .progress {
     border-radius:3px;
@@ -468,7 +485,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .main-timeline:before{
     content: "";
     width: 2px;
-    height: 84%;
+    /* height: 84%; */
+    height: 60.5%;
     background: #b2c1ce;
     position: absolute;
     top: 1.5%;
